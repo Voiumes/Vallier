@@ -20,7 +20,7 @@
     }
 }
 .carousel-inner{
-    width:1590px;
+    width:1588px;
     max-height: 975px !important;
   }
   .carousel-inner img{
@@ -108,6 +108,58 @@
 .menuContent{
     background-color:rgb(241, 235, 218);
 }
+
+/* ================================================================== */
+
+.aboutUsGrid{
+    display: grid;
+    grid-template-columns: 1045px auto;
+    background-color: white;
+    height:975px;
+}
+.aboutcarousel{
+    width:780px;
+    margin-left: 200px;
+    margin-top: 170px;
+}
+.about-carousel-inner{
+    width:780px ;
+}
+.aboutcarouselinner img{
+    opacity: 1;
+    max-width: 780px;
+}
+.aboutimg{
+   width: 780px !important;
+   max-height: 519px !important;
+   opacity: 1 !important;
+}
+.aboutUsText{
+    margin-top: 290px;
+}
+.aboutUsText p{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
