@@ -1,0 +1,107 @@
+#contentArea{
+    background-color:rgb(88, 99, 110);
+    width: 100%;
+    height: 5000px;
+
+}
+.carousel-inner{
+    width:100%;
+    max-height: 975px !important;
+  }
+  .carousel-inner img{
+      opacity: .7;
+  }
+.carousel-caption{
+    top:35%;
+ 
+    text-align: left;
+}
+.carousel-caption h5{
+    font-size: 80px;
+    font-weight: bold;
+    color:rgb(240, 240, 240);
+    text-shadow: 4px 2px 11px rgba(20, 20, 20, 0.5);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: .9s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+}
+.carousel-caption p{
+    font-size: 70px;
+    font-weight: bold;
+    color:rgb(240, 240, 240);
+    text-shadow: 4px 2px 11px rgba(49, 49, 49, 0.5);
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+/* ================================================ */
+
+
+.menuGrid{
+    display: grid;
+    grid-template-columns: 53px auto;
+}
+.menuNav{
+    background-color: white;
+    height: 975px;   
+
+}
+.menuNav{
+    padding-top: 40px;
+}
+.menuNavSpace{
+    position: relative;
+}
+.menuNav ul{
+    position:sticky;
+    top: 35%;
+}
+.menuNav ul li{
+    list-style: none;
+    transform: rotate(-90deg);
+    transform-origin: top 0;
+     margin-top: 60px;
+}
+.menuNav ul li a{ 
+
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    display:inline-block;
+    writing-mode: sideways-lr;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px; 
+    padding-bottom: 12px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.menuNav ul li a:hover{
+   
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+.menuContent{
+    background-color:rgb(241, 235, 218);
+}
+
+
+
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

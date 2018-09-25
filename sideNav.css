@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin:0;
+}
+#pageGrid{
+    display: grid;
+    grid-template-columns: 315px auto;
+}
+.sideNavBox{
+    background-color: rgb(48,48,48);
+}
+.navbar{
+    background-color: rgb(48,48,48) ;
+    display:none;
+}
+
+#mainNav{
+    background-color: rgb(48,48,48) ;
+    display: inline-block;
+    height:975px;
+    width:315px;
+    position: fixed;
+    top:0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+}
+.logo{
+    height: 205px;
+    width: 205px;
+    background-image: url(https://i.gyazo.com/d1e5180ebe401e0f62ff884ec31e3c11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+    margin-left: 52px;
+
+}
+.links ul{
+    position:relative;
+}
+.links ul li{
+    list-style: none;
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+.links ul li a{
+    position: relative;
+    color:rgb(241, 235, 218);
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .12rem;
+    padding:2px 0;
+    display: inline-block;
+}
+.links ul li a::after{
+    transition: width 0.3s;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: rgb(241, 235, 218);
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+}
+.links ul li a::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(241, 235, 218);
+    transition: width .3s;
+    position: absolute;
+    top: -3px;
+}
+.links ul li a:hover::after{
+    width:100%;
+}
+.links ul li a:hover::before{
+    width:100%;
+}
+
+.fr{
+    text-align: center;
+    color:rgb(200,163,116) !important;
+}
+.fr:hover{
+    color:rgb(231, 188, 133) !important;
+}
+.socialMedia{
+    text-align: center;
+    margin-top:100px;
+}
+.socialMedia a{
+    color:rgb(200,163,116);
+}
+i{
+    margin-right: 10px;
+    margin-left:10px;
+    height: 50px;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 388px) {
+    .navbar{
+        background-color: rgb(48,48,48) ;
+        display:block;
+    }
+    #mainNav{
+        display:none;
+    }
+}
+
+.location{
+    margin:0 auto;
+    color:rgb(241, 235, 218);
+    width: 180px;
+    text-align: center;
+}
+.location span{
+    font-size: .73rem;
+}
+.location h6{
+    color:rgb(200,163,116);
+    font-weight: 100;
+    font-size: .9rem;
+    letter-spacing: .3rem;
+    padding-top:5px;
+}
+.booktable{
+     background-color: rgb(241, 235, 218);  
+     height: 300px;
+     width:100%;
+     text-align: center;
+}
+.booktable a{
+    text-decoration: none;
+}
+.booktable a:hover{
+   color:rgb(0, 0, 0);
+}
+.booktable div{
+    margin-top:30px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+
+}
+.booktable h1{     
+    border: 1px solid rgba(128, 128, 128, 0.582);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box; 
+    margin:0 auto;
+    width: 90%; 
+    color: rgb(71, 71, 71);
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { 
+        border:1px solid white;
+    }
+    66% { border:1px solid rgb(224, 150, 54); }
+    100% { 
+        border:1px solid white;
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
