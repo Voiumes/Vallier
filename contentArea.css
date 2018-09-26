@@ -64,7 +64,7 @@
 }
 .menuNav{
     background-color: white;
-    height: 975px;   
+    height: 1255px;   
 
 }
 .menuNav{
@@ -83,8 +83,9 @@
     transform-origin: top 0;
      margin-top: 60px;
 }
-.menuNav ul li a{ 
-
+.menuNav ul li button{ 
+    border:none;
+    background-color: transparent;
     font-size: 1.4rem;
     font-weight: 200;
     color: rgb(44, 44, 44);
@@ -95,19 +96,50 @@
     padding-left:10px;
     padding-right:10px; 
     padding-bottom: 12px;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom .3s;
+    
 }
-.menuNav ul li a:hover{
-   
-    border-bottom: 1px solid rgb(122, 122, 122);
+.menuNav ul li button:hover{
+    border-bottom: 3px solid rgb(200,163,116);
+    opacity: 1;
 }
 .menuContent{
     background-color:rgb(241, 235, 218);
 }
+button:focus {outline:0;}
+
+
+/* Appetizers */
+
+.appetizerGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 5rem;
+    grid-column-gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.menuAppetizers div p i, .menuEntrees div p i, .menuDesserts div p i{
+    font-size: .9rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ================================================================== */
 
@@ -126,7 +158,6 @@
     width:780px ;
 }
 .aboutcarouselinner img{
-    opacity: 1;
     max-width: 780px;
 }
 .aboutimg{
@@ -163,7 +194,12 @@
 
 
 
-
+.displayNone{
+    display:none
+}
+.fadeIn{
+    animation: fadeIn .5s ease-in-out forwards
+}
 
 @keyframes fadeIn{
     0%{
