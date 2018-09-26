@@ -128,19 +128,6 @@ button:focus {outline:0;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================================================================== */
 
 .aboutUsGrid{
@@ -149,28 +136,138 @@ button:focus {outline:0;}
     background-color: white;
     height:975px;
 }
-.aboutcarousel{
+.galleryGrid{
+    display: grid;
+    grid-template-columns: auto 1045px;
+    background-color: white;
+    height:975px;
+    padding-left:50px;
+}
+.aboutcarousel, .gallerycarousel{
     width:780px;
     margin-left: 200px;
     margin-top: 170px;
 }
-.about-carousel-inner{
+.about-carousel-inner, .gallery-carousel-inner{
     width:780px ;
 }
-.aboutcarouselinner img{
+.aboutcarouselinner img, .gallerycarouselinner img{
     max-width: 780px;
 }
-.aboutimg{
+.aboutimg, .galleryimg{
    width: 780px !important;
    max-height: 519px !important;
    opacity: 1 !important;
 }
-.aboutUsText{
+.aboutUsText, .galleryText{
     margin-top: 290px;
 }
-.aboutUsText p{
+.aboutUsText p, .galleryText p{
     font-size: 1.2rem;
     font-weight: 100;
+    
+}
+.aboutUsText p:nth-of-type(1), .galleryText p:nth-of-type(1){
+    text-indent: 50px;
+    
+}
+
+/* ================================= */
+
+.contactArea{
+    background-color: rgb(248, 245, 234);
+    height: 975px;
+}
+.contactGrid{
+    display:grid;
+    grid-template-columns: 436px auto;
+    margin-left: 140px;   
+    padding-top: 150px;
+}
+.contactInfo h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.contactLocation p{
+    margin-top:10px;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.contactLocation p:last-of-type{
+    padding-bottom: 40px;
+}
+
+.openingHours p{
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: .7rem;
+}
+.openingHours p:last-of-type{
+    padding-bottom: 40px;
+}
+.openingHours h4{
+    padding:40px 0 20px 0;
+}
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    background:rgb(248, 245, 234);
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+
+}
+.reservations h4{
+    padding: 40px 0 20px 0;
+}
+.reservations a{
+    text-decoration: underline;
+    color: black;
+}
+
+.reservations p{
+    font-size: 1.1rem;
+}
+.contactMap img{
+    margin: 90px 0 0 300px;
+    height: 500px;
+}
+
+
+/* =============================== */
+
+.footerGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(212, 207, 188);
+    height: 95px;
+    text-align: center;
+    font-weight: 100;
+    grid-gap: 4em;
+}
+.footerGrid div{
+    text-align: center;
+    padding-top: 35px;
+    height: 20px;
+
+}
+.footerGrid p{
+    margin-bottom: 0;
+}
+
+.footerGrid a{
+    color:rgba(0, 0, 0, 0.808);
 }
 
 
@@ -188,12 +285,7 @@ button:focus {outline:0;}
 
 
 
-
-
-
-
-
-
+/* ============================= */
 .displayNone{
     display:none
 }
